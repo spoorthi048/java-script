@@ -34,3 +34,30 @@ const myFuntion=function(){
 }
 
 console.log(typeof anotherId);
+
+
+
+// Stack (primitive), Heap (Non-primitive)
+// stack=when we take something from stack we only get the copy of that
+//Heap=when we take somethinng from heap we get reference that means whatever we change it will be changed in original value also
+
+let myYoutube="Spoorthi@googgle.com"
+let anotherName=myYoutube
+anotherName="Yashu@google.com"
+console.log(anotherName);
+console.log(myYoutube);
+
+
+let userOne={
+    email:"user@google.com",
+    UPI:"user@bl"
+}
+
+let userTwo=userOne
+userTwo.email="spoorthi@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+ 
